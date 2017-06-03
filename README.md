@@ -1,21 +1,15 @@
 # React Breadcrumb Component
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status](https://travis-ci.org/amadormf/react-pag.svg?branch=master)](https://travis-ci.org/amadormf/react-breadcrumb)
 [![npm download][download-image]][download-url]
 
 [npm-image]: http://img.shields.io/npm/v/react-breadcrumb.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/react-breadcrumb
-[download-image]: https://img.shields.io/npm/dm/react-breadcrumb.svg?style=flat-square
-[download-url]: https://npmjs.org/package/react-breadcrumb
-
-Breacrumb for use with React.
-
-You can view an online example in [https://amadormf.github.io/react-breadcrumb/](https://amadormf.github.io/react-breadcrumb/)
+[npm-url]: http://npmjs.org/package/react-mf-breadcrumb
+[download-url]: https://npmjs.org/package/react-mf-breadcrumb
 
 ##Install
 
-`npm install --save react-breadcrumb`
+`npm install --save react-mf-breadcrumb`
 
 ##Examples
 ```javascript
