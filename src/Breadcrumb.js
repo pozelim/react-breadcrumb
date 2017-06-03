@@ -11,11 +11,13 @@ export default class Breadcrumb extends React.Component {
     onClick: PropTypes.func.isRequired,
     className: PropTypes.string,
     classes: PropTypes.object,
+    useHref: PropTypes.bool
   };
 
   static defaultProps = {
     separatorChar: '/',
     classes: {},
+    useHref: true,
     onClick: () => {},
   }
 
@@ -85,7 +87,7 @@ export default class Breadcrumb extends React.Component {
   }
 
   _getPathComponent(pathObj, separatorChar, index) {
-    const { classes } = this.props;
+    const { classes, useHref } = this.props;
     const classNameContainer = classNames(
       'Breadcrumb-container',
       {
@@ -131,7 +133,7 @@ export default class Breadcrumb extends React.Component {
   _getLinkPath(pathObj) {
     if (pathObj.path && pathObj.path !== '') {
       return (
-        <a href={pathObj.path}>
+        <a href={(useHref && pathObj.path) || "javascript:void(0)"}>
           {pathObj.label}
         </a>
       );

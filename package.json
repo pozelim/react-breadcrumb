@@ -1,10 +1,10 @@
 {
-  "name": "react-breadcrumb",
+  "name": "react-mf-breadcrumb",
   "version": "1.0.0",
   "description": "React Breadcrumb Component",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amadormf/react-breadcrumb"
+    "url": "https://github.com/pozelim/react-mf-breadcrumb.git"
   },
   "license": "MIT",
   "scripts": {
@@ -85,5 +85,9 @@
   },
   "pre-commit": {
     "run": "lint, test"
-  }
+  },
+  "keywords": [
+    "breadcrumbs"
+  ],
+  "author": "Pedro Ozelim <pedrohozelim@gmail.com>"
 }
