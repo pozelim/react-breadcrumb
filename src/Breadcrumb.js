@@ -133,7 +133,7 @@ export default class Breadcrumb extends React.Component {
   _getLinkPath(pathObj, useHref) {
     if (pathObj.path && pathObj.path !== '') {
       return (
-        <a href={(useHref && pathObj.path) || "javascript:void(0)"}>
+        <a href={(useHref && pathObj.path) || event.preventDefault()}>
           {pathObj.label}
         </a>
       );
